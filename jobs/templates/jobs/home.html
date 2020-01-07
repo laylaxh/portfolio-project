@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		{% load static %} 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
@@ -46,7 +47,7 @@
 					<!-- ml-auto makes all the links go to the right -->
 					<div class="navbar-nav ml-auto">
 						<a class="nav-item nav-link" href="#">Twitter</a>
-						<a class="nav-item nav-link" href="#">Resume</a>
+						<a class="nav-item nav-link" href="{% static 'notresume.pdf' %}">Resume</a>
 						<a class="nav-item nav-link" href="#">Blog</a>
 					</div>
 				</div>
@@ -60,6 +61,7 @@
 					<p>
 						<a href="mailto:laylaxh@gmail.com" class="btn btn-primary my-2">Email Me</a>
 					</p>
+					<img src="{% static 'angrybabyyoda.jpg' %}" height="300" />
 				</div>
 			</section>
 			<div class="album py-5 bg-light">
